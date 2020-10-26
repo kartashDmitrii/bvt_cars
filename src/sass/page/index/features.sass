@@ -1,0 +1,49 @@
+section.features
+  background: url("../img/features_BG.png") center center / cover no-repeat
+  padding-top: 90px
+  padding-bottom: 105px
+  .container
+    display: flex
+    flex-direction: column
+    .title
+      font-weight: 700
+      font-size: 31px
+      line-height: 38px
+      color: #ffffff
+      max-width: 520px
+      margin: 0 0 24px
+    .grid
+      display: grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-auto-rows: 1fr
+      grid-column-gap: 20px
+      grid-row-gap: 40px
+      .elem
+        position: relative
+        display: flex
+        align-items: flex-start
+        .num
+          font-weight: 700
+          font-size: 90px
+          line-height: 110px
+          color: #3abbc5
+          margin: 0 25px 0 0
+        .image
+          position: absolute
+          bottom: 0
+          left: 0
+        .text
+          display: flex
+          flex-direction: column
+          .name
+            font-weight: 700
+            font-size: 24px
+            line-height: 29px
+            color: #ffffff
+            margin: 0
+          .desc
+            font-weight: 300
+            font-size: 17px
+            line-height: 23px
+            color: #ffffff
+            margin: 0

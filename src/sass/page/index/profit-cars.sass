@@ -1,0 +1,112 @@
+section.profit-cars
+  padding-top: 115px
+  padding-bottom: 80px
+  background: url("../img/profit-cars_BG.png") left bottom / 553px 635px no-repeat #1C2232
+  .container
+    display: flex
+    flex-direction: column
+    .title
+      font-weight: 700
+      font-size: 31px
+      line-height: 38px
+      color: #ffffff
+      margin: 0 0 42px
+      span
+        color: #3ABBC5
+    .grid
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 30px
+      grid-auto-columns: auto
+      align-items: flex-start
+      .elem
+        display: flex
+        align-items: center
+        padding: 12px 55px 12px 75px
+        background: url("../img/profit-bg.png") center center / cover no-repeat
+        .text
+          width: 50%
+          box-sizing: border-box
+          padding-right: 90px
+          display: flex
+          flex-direction: column
+          .name
+            font-weight: 600
+            font-size: 25px
+            line-height: 30px
+            padding-bottom: 9px
+            color: #ffffff
+            margin: 0 0 16px
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              left: 0
+              bottom: 0
+              height: 3px
+              width: 75%
+              background: linear-gradient(90deg, rgba(48, 60, 94, 0) 0%, #606571 49.48%, rgba(48, 60, 94, 0) 100%)
+          ul
+            padding: 0
+            margin: 0
+            list-style: none
+            display: flex
+            flex-direction: column
+            li
+              display: flex
+              p
+                font-weight: 700
+                font-size: 20px
+                line-height: 30px
+                color: #ffffff
+                margin: 0 10px 0 0
+              span
+                font-size: 20px
+                line-height: 30px
+                color: #ffffff
+                margin: 0
+        .cars
+          width: 50%
+          box-sizing: border-box
+          padding-left: 105px
+          padding-top: 50px
+          padding-bottom: 15px
+          display: grid
+          grid-template-columns: 1fr 1fr
+          grid-auto-rows: 1fr
+          grid-gap: 50px
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 3px
+            height: 100%
+            transform: translateX(-50%)
+            background: linear-gradient(180deg, rgba(48, 60, 94, 0) 0%, #606571 49.48%, rgba(48, 60, 94, 0) 100%)
+          .car
+            display: flex
+            align-items: center
+            height: 80px
+            background: #484D5B
+            border-radius: 7px
+            .image
+              position: relative
+              width: 40%
+              height: 80px
+              img
+                max-width: 125px
+                max-height: 95px
+                width: auto
+                height: auto
+                position: absolute
+                left: -30px
+            .name
+              width: 60%
+              box-sizing: border-box
+              padding-left: 15px
+              font-weight: 700
+              font-size: 14px
+              line-height: 17px
+              color: #ffffff

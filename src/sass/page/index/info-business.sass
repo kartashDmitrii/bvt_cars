@@ -1,0 +1,93 @@
+section.info-business
+  background-color: #1C2232
+  padding-top: 38px
+  padding-bottom: 90px
+  display: flex
+  flex-direction: column
+  overflow: hidden
+  position: relative
+  &:before
+    content: ''
+    width: 502px
+    height: 513px
+    position: absolute
+    top: -207px
+    right: -191px
+    background: url("../img/bush.png") center center / 100% 100% no-repeat
+  &:after
+    content: ''
+    width: 483px
+    height: 483px
+    position: absolute
+    bottom: -378px
+    right: -196px
+    background: #313643
+    border-radius: 50%
+  .container
+    position: static
+  h2
+    font-weight: 700
+    font-size: 31px
+    line-height: 38px
+    color: #ffffff
+    margin: 0 0 40px
+    width: 640px
+  .content
+    display: flex
+    .left-image
+      width: 50%
+      img
+        position: absolute
+        bottom: -120px
+        left: -10%
+        width: auto
+        height: auto
+        user-select: none
+        pointer-events: none
+        z-index: 2
+    .info
+      width: 50%
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      .desc
+        font-weight: 300
+        font-size: 17px
+        line-height: 24px
+        margin: 0 0 100px 40px
+        color: #ffffff
+      ul
+        padding: 0
+        margin: 0 0 0 -20%
+        list-style: none
+        display: flex
+        flex-direction: column
+        li
+          background: #494E59
+          display: flex
+          justify-content: flex-end
+          position: relative
+          margin-bottom: 35px
+          padding-left: 115px
+          left: -50px
+          &:nth-child(2)
+            left: 0
+          &:last-child
+            left: 50px
+          p
+            padding: 7px 30px 7px 0
+            margin: 0 60px 0 0
+            font-weight: 700
+            font-size: 20px
+            line-height: 24px
+            color: #ffffff
+          .image
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            right: -85px
+            bottom: -30px
+            img
+              width: 100%
+              height: auto

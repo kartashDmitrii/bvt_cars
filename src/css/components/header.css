@@ -1,20 +1,56 @@
 header {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px; }
   header .logo {
-    width: 240px;
-    height: 65px; }
+    width: 110px;
+    height: 50px; }
   header nav {
-    flex: 1; }
+    flex: 1;
+    display: flex;
+    margin: 0 175px; }
     header nav ul {
-      padding: 0;
-      margin: 0;
-      list-style: none;
+      width: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
       header nav ul li {
-        display: flex; }
+        display: flex;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #000; }
+        header nav ul li.active {
+          font-weight: 700;
+          color: #3ABBC5;
+          border-bottom: 4px solid #3ABBC5; }
         header nav ul li a {
-          user-select: none; }
+          text-decoration: none;
+          color: inherit;
+          padding: 15px 5px; }
+  header .user-panel {
+    display: flex;
+    align-items: center; }
+    header .user-panel .social {
+      display: flex;
+      align-items: center;
+      margin: 0 50px 0 0;
+      padding: 0;
+      list-style: none; }
+      header .user-panel .social li {
+        width: 22px;
+        height: 22px;
+        margin-right: 10px; }
+        header .user-panel .social li:last-child {
+          margin-right: 0; }
+    header .user-panel .phone {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+      color: #000;
+      margin: 0; }

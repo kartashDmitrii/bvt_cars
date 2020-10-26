@@ -1,0 +1,149 @@
+section.how-we-do-it {
+  padding-top: 137px;
+  padding-bottom: 150px;
+  position: relative;
+  overflow: hidden; }
+  section.how-we-do-it:before {
+    content: '';
+    width: 1512px;
+    height: 1521px;
+    position: absolute;
+    left: -360px;
+    top: -500px;
+    transform: rotate(-11deg);
+    background: url("../img/tires.png") center center/100% 100% no-repeat; }
+  section.how-we-do-it .container {
+    display: flex;
+    flex-direction: column; }
+    section.how-we-do-it .container .title {
+      font-weight: 700;
+      font-size: 31px;
+      line-height: 38px;
+      color: #030303;
+      margin: 0 0 17px;
+      max-width: 660px; }
+      section.how-we-do-it .container .title span {
+        color: #3ABBC5; }
+    section.how-we-do-it .container .tab-buttons {
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+      display: flex; }
+      section.how-we-do-it .container .tab-buttons li {
+        padding: 18px 12px;
+        border-radius: 15px 15px 0 0;
+        font-size: 25px;
+        line-height: 30px;
+        margin: 0;
+        font-weight: 700;
+        cursor: pointer; }
+        section.how-we-do-it .container .tab-buttons li.active {
+          cursor: default;
+          font-weight: 400;
+          color: #ffffff;
+          background: #303440; }
+    section.how-we-do-it .container .tabs {
+      margin-bottom: 30px; }
+      section.how-we-do-it .container .tabs .tab {
+        display: flex;
+        background: url("../img/tab_BG.png") center center/100% 100% no-repeat;
+        padding-top: 75px;
+        padding-bottom: 90px;
+        border-bottom: 14px solid #A3A3A3;
+        border-radius: 30px; }
+        section.how-we-do-it .container .tabs .tab .text {
+          display: flex;
+          flex-direction: column;
+          width: 75%; }
+          section.how-we-do-it .container .tabs .tab .text .name {
+            display: flex;
+            flex-direction: column;
+            padding: 25px 190px 25px 50px;
+            border-radius: 0 15px 15px 0;
+            background: #1C2232;
+            margin-bottom: 37px; }
+            section.how-we-do-it .container .tabs .tab .text .name h2 {
+              font-weight: 700;
+              font-size: 24px;
+              line-height: 29px;
+              color: #ffffff;
+              margin: 0; }
+            section.how-we-do-it .container .tabs .tab .text .name p {
+              font-weight: 300;
+              font-size: 20px;
+              line-height: 24px;
+              margin: 0;
+              color: #ffffff; }
+              section.how-we-do-it .container .tabs .tab .text .name p span {
+                color: #3ABBC5; }
+          section.how-we-do-it .container .tabs .tab .text .steps {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+            list-style: none; }
+            section.how-we-do-it .container .tabs .tab .text .steps li {
+              display: flex;
+              align-items: center;
+              position: relative;
+              margin-bottom: 20px; }
+              section.how-we-do-it .container .tabs .tab .text .steps li:last-child {
+                margin-bottom: 0; }
+              section.how-we-do-it .container .tabs .tab .text .steps li span {
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 61px;
+                color: #3abbc5;
+                margin-right: 28px; }
+              section.how-we-do-it .container .tabs .tab .text .steps li .image {
+                position: absolute;
+                left: 0;
+                bottom: 0; }
+              section.how-we-do-it .container .tabs .tab .text .steps li p {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
+                color: #ffffff;
+                margin: 0; }
+        section.how-we-do-it .container .tabs .tab .image-block {
+          width: 25%;
+          position: relative; }
+          section.how-we-do-it .container .tabs .tab .image-block img {
+            position: absolute;
+            width: 1020px;
+            height: 810px;
+            object-fit: cover;
+            object-position: center;
+            right: -327px;
+            bottom: -133px; }
+          section.how-we-do-it .container .tabs .tab .image-block canvas {
+            position: absolute;
+            width: 1020px;
+            height: 810px;
+            right: -327px;
+            bottom: -133px;
+            z-index: 2; }
+          section.how-we-do-it .container .tabs .tab .image-block ol {
+            position: absolute;
+            width: 1020px;
+            height: 810px;
+            right: -327px;
+            bottom: -133px;
+            z-index: 3; }
+            section.how-we-do-it .container .tabs .tab .image-block ol li {
+              display: none; }
+    section.how-we-do-it .container .lots {
+      display: flex;
+      flex-direction: column; }
+      section.how-we-do-it .container .lots .info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px; }
+        section.how-we-do-it .container .lots .info p {
+          margin: 0 37px 0 0;
+          font-size: 24px;
+          line-height: 29px;
+          color: #000; }
+        section.how-we-do-it .container .lots .info .images {
+          display: flex;
+          align-items: center; }
