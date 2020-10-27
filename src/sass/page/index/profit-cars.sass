@@ -2,6 +2,26 @@ section.profit-cars
   padding-top: 115px
   padding-bottom: 80px
   background: url("../img/profit-cars_BG.png") left bottom / 553px 635px no-repeat #1C2232
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    width: 483px
+    height: 483px
+    background: #313643
+    border-radius: 50%
+    position: absolute
+    top: -116px
+    right: -241px
+  &:after
+    content: ''
+    width: 160px
+    height: 160px
+    background: #313643
+    border-radius: 50%
+    position: absolute
+    top: 411px
+    right: -82px
   .container
     display: flex
     flex-direction: column
@@ -30,6 +50,8 @@ section.profit-cars
           padding-right: 90px
           display: flex
           flex-direction: column
+          @media (max-width: 1365px)
+            padding-right: 40px
           .name
             font-weight: 600
             font-size: 25px
@@ -76,6 +98,8 @@ section.profit-cars
           grid-auto-rows: 1fr
           grid-gap: 50px
           position: relative
+          @media (max-width: 1365px)
+            padding-left: 50px
           &:after
             content: ''
             position: absolute
@@ -91,6 +115,9 @@ section.profit-cars
             height: 80px
             background: #484D5B
             border-radius: 7px
+            transition: all .1s
+            &:hover
+              box-shadow: inset 0 0 6px 6px #fff
             .image
               position: relative
               width: 40%

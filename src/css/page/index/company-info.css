@@ -1,0 +1,84 @@
+section.company-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+  margin-bottom: 90px; }
+  section.company-info .social {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; }
+    section.company-info .social .title {
+      font-weight: 700;
+      font-size: 31px;
+      line-height: 38px;
+      color: #000;
+      margin: 0; }
+    section.company-info .social > p {
+      font-size: 24px;
+      line-height: 29px;
+      color: #000;
+      margin: 0; }
+    section.company-info .social .links {
+      margin-top: 34px;
+      display: flex;
+      align-items: center; }
+      section.company-info .social .links p {
+        max-width: 525px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 24px;
+        margin: 0 30px 0 0;
+        color: #000; }
+      section.company-info .social .links a {
+        width: 145px;
+        height: 66px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-right: 45px;
+        background: #323744;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        section.company-info .social .links a:last-child {
+          margin-right: 0; }
+        section.company-info .social .links a img {
+          max-width: 33px;
+          max-height: 30px; }
+  section.company-info .seo-text {
+    display: flex; }
+    section.company-info .seo-text .text {
+      display: flex;
+      flex-direction: column;
+      width: 50%; }
+      section.company-info .seo-text .text * {
+        margin: 0 0 25px; }
+        section.company-info .seo-text .text *:last-child {
+          margin: 0; }
+      section.company-info .seo-text .text h2 {
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 38px;
+        color: #000; }
+      section.company-info .seo-text .text p {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 24px;
+        color: #000; }
+        section.company-info .seo-text .text p > * {
+          margin: 0; }
+      section.company-info .seo-text .text b {
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 24px;
+        color: #000; }
+    section.company-info .seo-text .image {
+      width: 50%;
+      position: relative; }
+      section.company-info .seo-text .image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        max-width: 820px;
+        max-height: calc(100% + 90px); }

@@ -1,0 +1,68 @@
+footer {
+  background: #161B25;
+  padding: 15px; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
+    footer .container .left-side {
+      display: flex;
+      flex-direction: column; }
+      footer .container .left-side .logo {
+        width: 210px;
+        height: 60px;
+        margin-bottom: 40px; }
+      footer .container .left-side .privacy {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff; }
+        footer .container .left-side .privacy p {
+          font-size: 10px;
+          line-height: 12px;
+          margin: 0; }
+        footer .container .left-side .privacy a {
+          font-size: 10px;
+          line-height: 12px;
+          color: #ffffff; }
+    footer .container .links {
+      margin-left: 70px;
+      margin-right: 100px;
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px; }
+      footer .container .links ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        color: #ffffff; }
+        footer .container .links ul a {
+          font-size: 14px;
+          line-height: 25px;
+          text-decoration: none;
+          color: inherit;
+          margin-bottom: 5px; }
+    footer .container .right-side {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      footer .container .right-side .btn {
+        background: #3ABBC5;
+        border-color: #228c94;
+        margin-bottom: 20px; }
+      footer .container .right-side .social {
+        display: flex;
+        align-items: center;
+        margin: 0 0 35px;
+        padding: 0;
+        list-style: none; }
+        footer .container .right-side .social li {
+          width: 22px;
+          height: 22px;
+          margin-right: 10px; }
+          footer .container .right-side .social li:last-child {
+            margin-right: 0; }
+      footer .container .right-side .develop-by {
+        width: 125px;
+        height: 17px; }

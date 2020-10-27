@@ -1,7 +1,27 @@
 section.profit-cars {
   padding-top: 115px;
   padding-bottom: 80px;
-  background: url("../img/profit-cars_BG.png") left bottom/553px 635px no-repeat #1C2232; }
+  background: url("../img/profit-cars_BG.png") left bottom/553px 635px no-repeat #1C2232;
+  position: relative;
+  overflow: hidden; }
+  section.profit-cars:before {
+    content: '';
+    width: 483px;
+    height: 483px;
+    background: #313643;
+    border-radius: 50%;
+    position: absolute;
+    top: -116px;
+    right: -241px; }
+  section.profit-cars:after {
+    content: '';
+    width: 160px;
+    height: 160px;
+    background: #313643;
+    border-radius: 50%;
+    position: absolute;
+    top: 411px;
+    right: -82px; }
   section.profit-cars .container {
     display: flex;
     flex-direction: column; }
@@ -30,6 +50,9 @@ section.profit-cars {
           padding-right: 90px;
           display: flex;
           flex-direction: column; }
+          @media (max-width: 1365px) {
+            section.profit-cars .container .grid .elem .text {
+              padding-right: 40px; } }
           section.profit-cars .container .grid .elem .text .name {
             font-weight: 600;
             font-size: 25px;
@@ -76,6 +99,9 @@ section.profit-cars {
           grid-auto-rows: 1fr;
           grid-gap: 50px;
           position: relative; }
+          @media (max-width: 1365px) {
+            section.profit-cars .container .grid .elem .cars {
+              padding-left: 50px; } }
           section.profit-cars .container .grid .elem .cars:after {
             content: '';
             position: absolute;
@@ -90,7 +116,10 @@ section.profit-cars {
             align-items: center;
             height: 80px;
             background: #484D5B;
-            border-radius: 7px; }
+            border-radius: 7px;
+            transition: all .1s; }
+            section.profit-cars .container .grid .elem .cars .car:hover {
+              box-shadow: inset 0 0 6px 6px #fff; }
             section.profit-cars .container .grid .elem .cars .car .image {
               position: relative;
               width: 40%;
