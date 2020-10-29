@@ -54,11 +54,20 @@ function sassCompile(){
 }
 function scssCompile(){
     return gulp.src('./src/sass/**/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-        .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./src/css'))
-        .pipe(browserSync.stream());
+     .pipe(sourcemaps.init())
+     .pipe(sass().on('error', sass.logError))
+     .pipe(gulp.dest('./src/css'))
+     .pipe(concat('style.css'))
+     .pipe(autoprefixer({
+         browsers: ['last 2 versions'],
+         cascade: false
+     }))
+     .pipe(cleanCSS({
+         level: 2
+     }))
+     .pipe(sourcemaps.write())
+     .pipe(gulp.dest('./build/css'))
+     .pipe(browserSync.stream());
 }
 function scripts() {
    return gulp.src('./src/js/*.js')

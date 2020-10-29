@@ -1,0 +1,23 @@
+section.breadcrumbs {
+  margin-top: 13px;
+  margin-bottom: 40px; }
+  section.breadcrumbs ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    section.breadcrumbs ul li {
+      display: flex;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0;
+      padding-right: 5px; }
+      section.breadcrumbs ul li a {
+        color: #000;
+        text-decoration: none; }
+        section.breadcrumbs ul li a:after {
+          content: '/';
+          padding-left: 5px; }
+      section.breadcrumbs ul li span {
+        color: #555; }

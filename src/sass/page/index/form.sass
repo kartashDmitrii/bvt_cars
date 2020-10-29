@@ -1,0 +1,79 @@
+section.form
+  margin-top: 120px
+  margin-bottom: 140px
+  @media (max-width: 767px)
+    margin-top: 50px
+    margin-bottom: 50px
+  .content
+    border-radius: 15px
+    box-shadow: 0 4px 20px rgba(138, 138, 138, 0.25)
+    padding: 30px 90px 80px
+    background: url("../img/form_BG.png") center center / 100% 100% no-repeat
+    box-sizing: border-box
+    display: flex
+    flex-direction: column
+    @media (max-width: 991px)
+      padding: 30px
+    @media (max-width: 480px)
+      padding: 15px 10px
+    .title
+      max-width: 600px
+      align-self: center
+      font-weight: 500
+      font-size: 31px
+      line-height: 38px
+      color: #000
+      margin: 0 0 55px
+      span
+        font-weight: 700
+      @media (max-width: 991px)
+        font-size: 24px
+        line-height: 28px
+      @media (max-width: 767px)
+        margin-bottom: 25px
+    form
+      display: flex
+      width: 100%
+      margin-bottom: 25px
+      @media (max-width: 767px)
+        flex-direction: column
+      label
+        width: 32%
+        margin-right: 2%
+        @media (max-width: 767px)
+          width: 100%
+          margin-right: 0
+          margin-bottom: 15px
+        input
+          background: #DCDCDC
+          border-radius: 7px
+          padding: 20px 12px 12px
+          border: none
+          outline: none
+          font-size: 12px
+          line-height: 15px
+          font-weight: 300
+          color: #4F4F4F
+          width: 100%
+          box-sizing: border-box
+      input[type="submit"]
+        width: 32%
+        background: #37467B
+        border-radius: 7px
+        font-weight: 700
+        font-size: 14px
+        line-height: 17px
+        color: #ffffff
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        border: none
+        outline: none
+        @media (max-width: 767px)
+          width: 100%
+          padding: 15px
+    .info
+      font-size: 13px
+      line-height: 16px
+      color: #6c6c6c

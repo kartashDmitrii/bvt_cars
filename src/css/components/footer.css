@@ -4,13 +4,28 @@ footer {
   footer .container {
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 767px) {
+      footer .container {
+        flex-wrap: wrap; } }
     footer .container .left-side {
       display: flex;
       flex-direction: column; }
+      @media (max-width: 767px) {
+        footer .container .left-side {
+          width: 50%; } }
       footer .container .left-side .logo {
         width: 210px;
         height: 60px;
         margin-bottom: 40px; }
+        @media (max-width: 575px) {
+          footer .container .left-side .logo {
+            width: 155px;
+            height: 45px; } }
+        @media (max-width: 479px) {
+          footer .container .left-side .logo {
+            width: 100px;
+            height: 35px;
+            margin-bottom: 20px; } }
       footer .container .left-side .privacy {
         display: flex;
         flex-direction: column;
@@ -28,15 +43,39 @@ footer {
       margin-right: 100px;
       flex: 1;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       margin-top: 10px; }
+      @media (max-width: 1199px) {
+        footer .container .links {
+          margin-right: 50px;
+          margin-left: 35px; } }
+      @media (max-width: 767px) {
+        footer .container .links {
+          justify-content: space-between;
+          order: -1;
+          min-width: 100%;
+          margin: 0 0 20px; } }
+      @media (max-width: 479px) {
+        footer .container .links {
+          flex-wrap: wrap;
+          margin-bottom: 10px; } }
       footer .container .links ul {
         padding: 0;
-        margin: 0;
+        margin: 0 80px 0 0;
         list-style: none;
         display: flex;
         flex-direction: column;
         color: #ffffff; }
+        footer .container .links ul:last-child {
+          margin-right: 0; }
+        @media (max-width: 820px) {
+          footer .container .links ul {
+            margin-right: 20px; } }
+        @media (max-width: 479px) {
+          footer .container .links ul {
+            width: 50%;
+            margin-bottom: 10px;
+            margin-right: 0; } }
         footer .container .links ul a {
           font-size: 14px;
           line-height: 25px;
@@ -47,10 +86,16 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: flex-end; }
+      @media (max-width: 767px) {
+        footer .container .right-side {
+          width: 50%; } }
       footer .container .right-side .btn {
         background: #3ABBC5;
         border-color: #228c94;
         margin-bottom: 20px; }
+        @media (max-width: 575px) {
+          footer .container .right-side .btn {
+            max-width: 135px; } }
       footer .container .right-side .social {
         display: flex;
         align-items: center;

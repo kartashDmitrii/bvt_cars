@@ -1,0 +1,39 @@
+section.article {
+  display: flex;
+  flex-direction: column; }
+  section.article .top-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px; }
+    section.article .top-block .title {
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 24px;
+      color: #000;
+      margin: 0; }
+    section.article .top-block a {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+      text-decoration: underline;
+      color: #000; }
+  section.article .photo {
+    margin-bottom: 15px; }
+  section.article .date {
+    align-self: flex-end;
+    font-size: 17px;
+    line-height: 23px;
+    color: #606060;
+    margin: 0 0 15px; }
+  section.article .text {
+    margin-left: 145px;
+    margin-bottom: 150px; }
+    section.article .text * {
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 23px;
+      color: #000;
+      margin-bottom: 20px; }
+      section.article .text *:last-child {
+        margin-bottom: 0; }

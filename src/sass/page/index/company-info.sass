@@ -3,6 +3,9 @@ section.company-info
   flex-direction: column
   padding-top: 160px
   margin-bottom: 90px
+  @media (max-width: 575px)
+    padding-top: 60px
+    padding-bottom: 15px
   .social
     display: flex
     flex-direction: column
@@ -13,15 +16,23 @@ section.company-info
       line-height: 38px
       color: #000
       margin: 0
+      @media (max-width: 575px)
+        font-size: 26px
+        line-height: 30px
     &>p
       font-size: 24px
       line-height: 29px
       color: #000
       margin: 0
+      @media (max-width: 575px)
+        font-size: 21px
+        line-height: 26px
     .links
       margin-top: 34px
       display: flex
       align-items: center
+      @media (max-width: 575px)
+        flex-wrap: wrap
       p
         max-width: 525px
         font-weight: 300
@@ -29,6 +40,12 @@ section.company-info
         line-height: 24px
         margin: 0 30px 0 0
         color: #000
+        @media (max-width: 575px)
+          max-width: none
+          width: 100%
+          margin: 0 0 15px
+        @media (max-width: 959px)
+          margin-right: 10px
       a
         width: 145px
         height: 66px
@@ -39,6 +56,11 @@ section.company-info
         display: flex
         align-items: center
         justify-content: center
+        @media (max-width: 959px)
+          margin-right: 15px
+        @media (max-width: 479px)
+          width: 47%
+          margin-right: 3%
         &:last-child
           margin-right: 0
         img
@@ -50,6 +72,8 @@ section.company-info
       display: flex
       flex-direction: column
       width: 50%
+      @media (max-width: 767px)
+        width: 100%
       *
         margin: 0 0 25px
         &:last-child
@@ -74,6 +98,8 @@ section.company-info
     .image
       width: 50%
       position: relative
+      @media (max-width: 767px)
+        display: none
       img
         position: absolute
         top: 0

@@ -35,9 +35,18 @@ img
   line-height: 17px
   border-bottom: 7px solid #142255
   transition: all .1s
+  height: 55px
+  box-sizing: border-box
   &:hover
     border-width: 3px
+    height: 51px
     margin-top: 4px
   &:active
     border-width: 0
+    height: 48px
     margin-top: 7px
+  @media (max-width: 575px)
+    padding: 10px 15px
+  @media (max-width: 479px)
+    max-width: 290px
+    box-sizing: border-box

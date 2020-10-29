@@ -1,11 +1,36 @@
 header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 10px; }
+  padding-top: 10px;
+  border-bottom: 1px solid #b1b1b1;
+  background: #fff;
+  position: relative;
+  z-index: 1; }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  header .left-side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  header .burger {
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    background: url("../img/svg/menu.svg") center center/100% 100% no-repeat;
+    display: none; }
+    @media (max-width: 859px) {
+      header .burger {
+        display: block; } }
+    @media (max-width: 479px) {
+      header .burger {
+        margin-right: 15px; } }
   header .logo {
     width: 110px;
     height: 50px; }
+    @media (max-width: 479px) {
+      header .logo {
+        width: 90px;
+        height: 45px; } }
   header nav {
     flex: 1;
     display: flex;
@@ -13,6 +38,25 @@ header {
     @media (max-width: 1365px) {
       header nav {
         margin: 0 50px; } }
+    @media (max-width: 859px) {
+      header nav {
+        flex-direction: column;
+        background: #ffffff;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        right: 110%;
+        top: 0;
+        margin: 0;
+        padding: 50px 0;
+        z-index: 11;
+        transition: right .3s; }
+        header nav.active {
+          right: 0; } }
+    @media (max-width: 575px) {
+      header nav {
+        height: calc(100vh - 40px); } }
     header nav ul {
       width: 100%;
       display: flex;
@@ -21,6 +65,11 @@ header {
       padding: 0;
       margin: 0;
       list-style: none; }
+      @media (max-width: 859px) {
+        header nav ul {
+          height: 100%;
+          flex-direction: column;
+          justify-content: center; } }
       header nav ul li {
         display: flex;
         font-weight: 300;
@@ -35,6 +84,18 @@ header {
           text-decoration: none;
           color: inherit;
           padding: 15px 5px; }
+    header nav .close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 11;
+      background: url("../img/svg/close.svg") center center/100% 100% no-repeat;
+      display: none; }
+      @media (max-width: 859px) {
+        header nav .close {
+          display: block; } }
   header .user-panel {
     display: flex;
     align-items: center; }
@@ -47,12 +108,30 @@ header {
       @media (max-width: 1365px) {
         header .user-panel .social {
           margin-right: 25px; } }
+      @media (max-width: 575px) {
+        header .user-panel .social {
+          position: fixed;
+          width: 100vw;
+          bottom: 0;
+          right: 110%;
+          height: 40px;
+          z-index: 11;
+          background: #ffffff;
+          justify-content: center;
+          margin: 0;
+          transition: all .3s; }
+          header .user-panel .social.active {
+            right: 0; } }
       header .user-panel .social li {
         width: 22px;
         height: 22px;
         margin-right: 10px; }
         header .user-panel .social li:last-child {
           margin-right: 0; }
+        @media (max-width: 575px) {
+          header .user-panel .social li {
+            width: 33px;
+            height: 33px; } }
     header .user-panel .phone {
       text-decoration: none;
       font-weight: 600;
