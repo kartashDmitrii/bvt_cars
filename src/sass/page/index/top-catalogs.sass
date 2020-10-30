@@ -35,8 +35,6 @@ section.top-catalogs
     .text
       width: calc(47.5% - 43px)
       margin-right: 43px
-      @media (max-width: 1365px)
-        width: calc(60% - 43px)
       @media (max-width: 820px)
         width: calc(60% - 20px)
         margin-right: 20px
@@ -90,8 +88,6 @@ section.top-catalogs
               margin-bottom: 0
     .catalog-slider
       width: 52.5%
-      @media (max-width: 1365px)
-        width: 40%
       @media (max-width: 767px)
         width: 100%
       .links
@@ -100,6 +96,15 @@ section.top-catalogs
         grid-auto-rows: 1fr
         grid-gap: 5px
         margin-bottom: 20px
+        @media (max-width: 860px)
+          grid-template-columns: 1fr 1fr
+          justify-content: center
+        @media (max-width: 767px)
+          grid-template-columns: 1fr 1fr 1fr
+        @media (max-width: 480px)
+          grid-template-columns: 1fr 1fr
+        @media (max-width: 350px)
+          grid-template-columns: 1fr
         .slide
           text-decoration: none
           color: #ffffff
@@ -140,6 +145,7 @@ section.top-catalogs
             pointer-events: none
             user-select: none
             position: absolute
+            text-align: center
             top: 0
             right: 0
             bottom: 0

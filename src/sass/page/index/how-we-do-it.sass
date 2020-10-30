@@ -67,14 +67,6 @@ section.how-we-do-it
         display: none
         &.active
           display: flex
-        &:nth-child(2)
-          .steps
-            li:nth-child(3)
-              .image
-                max-width: 50px
-                max-height: 50px
-                left: -14px
-                bottom: -17px
         .text
           display: flex
           flex-direction: column
@@ -151,7 +143,10 @@ section.how-we-do-it
                 line-height: 22px
                 color: #ffffff
                 margin: 0
-                max-width: 520px
+                max-width: 500px
+          .btn
+            margin-top: 35px
+            margin-left: 25px
         .image-block
           width: 25%
           position: relative
@@ -263,6 +258,22 @@ section.how-we-do-it
                 @media (max-width: 1023px)
                   font-size: 13px
                   line-height: 16px
+        &:nth-child(2)
+          .steps
+            li:nth-child(3)
+              .image
+                max-width: 50px
+                max-height: 50px
+                left: -14px
+                bottom: -17px
+        &:nth-child(3)
+          .steps
+            li:nth-child(1)
+              .image
+                max-width: 50px
+                max-height: 50px
+                left: -14px
+                bottom: -17px
     .lots
       display: flex
       flex-direction: column

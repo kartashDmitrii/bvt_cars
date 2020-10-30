@@ -1,0 +1,194 @@
+<div class="quiz-popup mfp-with-anim send__cont popup" id="quiz-popup">
+    <div class="send__item">
+        <div class="circularGCont">
+            <div class="circularG_1 circularG"></div>
+            <div class="circularG_2 circularG"></div>
+            <div class="circularG_3 circularG"></div>
+            <div class="circularG_4 circularG"></div>
+            <div class="circularG_5 circularG"></div>
+            <div class="circularG_6 circularG"></div>
+            <div class="circularG_7 circularG"></div>
+            <div class="circularG_8 circularG"></div>
+        </div>
+    </div>
+    <img src="img/quiz-car.png" alt="" class="quiz-car"> <a href="#" class="popup-close close"></a>
+    <div class="content">
+        <div class="top">
+            <div class="caption"> Ответьте на 3 вопроса и получите:</div>
+            <div class="descr">
+                <div class="image"><img src="img/quiz-phone.png" alt=""></div>
+                <div class="text"> Бесплатный расчет стоимости 3-х интересующих <br> Вас автомобиля с растаможкой
+                    <br> и доставкой в Украину
+                </div>
+            </div>
+        </div>
+        <div class="quiz-tab-content">
+            <form action="mail.php" method="post" class="quiz-form"><input type="hidden" name="project_name"
+                                                                           value="AG США"> <input type="hidden"
+                                                                                                  name="formid"
+                                                                                                  value="1"> <input
+                    type="hidden" name="form_subject" value="Расчет стоимости авто">
+                <div class="quiz-tab-pane faded" id="question1">
+                    <div class="caption">Вы определились с выбором авто?</div>
+                    <div class="answer-inputs"><label class="answer-text simple to-2"> Да, я знаю какой авто я хочу
+                        <input type="radio" name="Определились_с_выбором" class="answer" value="Да"/> </label>
+                        <label class="answer-text simple to-4"> Я не определился с выбором авто <input type="radio"
+                                                                                                       name="Определились_с_выбором"
+                                                                                                       class="answer"
+                                                                                                       value="Нет"
+                                                                                                       checked/>
+                        </label></div>
+                    <div class="quiz-staps"><span>Вы ответили:</span>
+                        <ul>
+                            <li class="current">01</li>
+                            <li>02</li>
+                            <li>03</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quiz-tab-pane faded " id="question2">
+                    <div class="caption">Какой авто вы выбрали?</div>
+                    <div class="answer-inputs">
+                        <div class="select-block"><span>Марка и модель авто</span> <select name="Марка" id="marka"
+                                                                                           class="item">
+                            <option value="Марка_не_выбрана">Ничего не выбрано</option>
+                            <option class="Buick_Encore" value="Buick_Encore">Buick Encore</option>
+                            <option class="Chevrolet_Cruze" value="Chevrolet_Cruze"> Chevrolet Cruze</option>
+                            <option class="Chevrolet_Cruze_Restyle" value="Chevrolet_Cruze_Restyle">Chevrolet Cruze
+                                Restyle
+                            </option>
+                            <option class="Chevrolet_Trax" value="Chevrolet_Trax">Chevrolet Trax</option>
+                            <option class="Chevrolet_Volt" value="Chevrolet_Volt">Chevrolet Volt</option>
+                            <option class="Chevrolet_Equinox" value="Chevrolet_Equinox">Chevrolet Equinox</option>
+                            <option class="Ford_Focus" value="Ford_Focus">Ford Focus</option>
+                            <option class="Ford_Fusion" value="Ford_Fusion">Ford Fusion</option>
+                            <option class="Ford_Fusion_PHEV" value="Ford_Fusion_PHEV">Ford Fusion PHEV</option>
+                            <option class="Ford_Fusion_Restyle" value="Ford_Fusion_Restyle">Ford Fusion Restyle
+                            </option>
+                            <option class="Ford_Escape" value="Ford_Escape">Ford Escape</option>
+                            <option class="Ford_Escape_II" value="Ford_Escape_II">Ford Escape II</option>
+                            <option class="Ford_Escape_III" value="Ford_Escape_III">Ford Escape III</option>
+                            <option class="Honda_Civic" value="Honda_Civic">Honda Civic</option>
+                            <option class="Honda_Civic_X" value="Honda_Civic_X">Honda Civic X</option>
+                            <option class="Honda_Fit" value="Honda_Fit">Honda Fit</option>
+                            <option class="Honda_CRV" value="Honda_CRV">Honda Crv</option>
+                            <option class="Honda_Accord" value="Honda_Accord">Honda Accord</option>
+                            <option class="Nissan_Leaf" value="Nissan_Leaf">Nissan Leaf</option>
+                            <option class="Toyota_Prius" value="Toyota_Prius"> Toyota Prius</option>
+                            <option class="Toyota_Yaris" value="Toyota_Yaris">Toyota Yaris</option>
+                            <option class="Porsche_Macan" value="Porsche_Macan">Porsche Macan</option>
+                            <option class="Mercedes_GLK" value="Mercedes_GLK">Mercedes GLK</option>
+                            <option class="Lexus_NX200T" value="Lexus_NX200T">Lexus NX200T</option>
+                            <option class="VW_Jetta" value="VW_Jetta">VW Jetta</option>
+                            <option class="VW_Passat" value="VW_Passat">VW Passat</option>
+                            <option value="Другая_марка/модель">Другая марка / модель</option>
+                            <option value="Квадроцикл(ATW)">Квадроцикл (ATW)</option>
+                            <option value="Мото">Мото</option>
+                            <option value="Другое">Другое</option>
+                        </select></div>
+                        <div class="select-block"><span>Год выпуска</span> <select class="date" name="Год_выпуска"
+                                                                                   id="date">
+                            <option value="2014">2010</option>
+                            <option value="2014">2011</option>
+                            <option value="2014">2012</option>
+                            <option value="2014">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                        </select></div>
+                        <div class="select-block"><span>Ваш бюджет</span> <select class="budg" name="Бюджет"
+                                                                                  id="budg">
+                            <option value="6.500$-8.500$">6.500-8.500$</option>
+                            <option value="8.500$-10.000$"> 8.500-10.000$</option>
+                            <option value="10.000$-12.000$">10.000-12.000$</option>
+                            <option value="12.000$-15.000$">12.000-15.000$</option>
+                            <option value="15.000$-20.000$">15.000-20.000$</option>
+                            <option value="_25D1_2581_25D0_25B2_25D1_258B_25D1_2588_25D0_25B5 20.000$">свыше
+                                20.000$
+                            </option>
+                        </select></div>
+                        <a href="#" class="next-block"> <span>Следующий вопрос</span> </a></div>
+                    <div class="quiz-staps"><span>Вы ответили:</span>
+                        <ul>
+                            <li class="current">01</li>
+                            <li class="">02</li>           <!--<li>03</li>--> </ul>
+                    </div>
+                </div>
+                <div class="quiz-tab-pane faded in active" id="question4">
+                    <div class="caption">Какой авто вы бы хотели купить?</div>
+                    <div class="answer-inputs"><span>Тип кузова авто</span> <label class="answer-text simple type">
+                        Седан <input type="radio" name="Тип_кузова" class="answer" value="Седан"/> </label> <label
+                            class="answer-text simple type"> Купе <input type="radio" name="Тип_кузова"
+                                                                         class="answer" value="Купе"/> </label>
+                        <label class="answer-text simple type"> Кроссовер <input type="radio" name="Тип_кузова"
+                                                                                 class="answer" value="Кроссовер"/>
+                        </label> <label class="answer-text simple type"> Другой <input type="radio"
+                                                                                       name="Тип_кузова"
+                                                                                       class="answer"
+                                                                                       value="Другой"/></label>
+                    </div>
+                    <div class="answer-inputs">
+                        <div class="select-block"><span>Ваш бюджет</span> <select class="budg" name="Бюджет"
+                                                                                  id="budg">
+                            <option value="8.500$-10.000$">7.500-8.500$</option>
+                            <option value="8.500$-10.000$">8.500-10.000$</option>
+                            <option value="10.000$-12.000$">10.000-12.000$</option>
+                            <option value="12.000$-15.000$">12.000-15.000$</option>
+                            <option value="15.000$-20.000$">15.000-20.000$</option>
+                            <option value="_25D1_2581_25D0_25B2_25D1_258B_25D1_2588_25D0_25B5 20.000$">свыше
+                                20.000$
+                            </option>
+                        </select></div>
+                        <div class="select-block"><span>Год выпуска </span> <select class="date" name="Год_выпуска"
+                                                                                    id="date">
+                            <option value="2014">2010</option>
+                            <option value="2015">2011</option>
+                            <option value="2016">2012</option>
+                            <option value="2016">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                        </select></div>
+                        <div class="select-block"><span>Тип двигателя</span> <select class="type" name="Двигатель"
+                                                                                     id="type">
+                            <option value="Бензин">Бензин</option>
+                            <option value="Дизель">Дизель</option>
+                            <option value="Гибрид">Гибрид</option>
+                            <option value="Электро">Электро</option>
+                        </select></div>
+                        <a href="#" class="next-block"> <span>Следующий вопрос</span> </a></div>
+                    <div class="quiz-staps"><span>Вы ответили:</span>
+                        <ul>
+                            <li class="current">01</li>
+                            <li class="">02</li>       <!--<li>03</li>--> </ul>
+                    </div>
+                </div>
+                <div class="quiz-tab-pane faded" id="question3">
+                    <div class="form-items">
+                        <div class="input-form"><span>Введите ваш номер телефона</span> <input type="tel" name="tel"
+                                                                                               placeholder="+380 ( __ ) __ - __ - __">
+                        </div>
+                        <button type="submit"><span>получить расчет стоимости </span></button>
+                    </div>
+                    <div class="manager">
+                        <div class="image"><img src="img/manager.png" alt=""></div>
+                        <div class="text"> Наш сотрудник свяжется с Вами при первой возможности <br> и сообщит Вам
+                            цены на интересующие Вас авто
+                        </div>
+                    </div>
+                    <div class="quiz-staps"><span>Вы ответили:</span>
+                        <ul>
+                            <li class="current">01</li>
+                            <li class="current">02</li>
+                            <li class=""><a href="#" class="prev-block">Назад</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

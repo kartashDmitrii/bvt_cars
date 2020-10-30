@@ -72,11 +72,6 @@ section.how-we-do-it {
         display: none; }
         section.how-we-do-it .container .tabs .tab.active {
           display: flex; }
-        section.how-we-do-it .container .tabs .tab:nth-child(2) .steps li:nth-child(3) .image {
-          max-width: 50px;
-          max-height: 50px;
-          left: -14px;
-          bottom: -17px; }
         section.how-we-do-it .container .tabs .tab .text {
           display: flex;
           flex-direction: column;
@@ -152,7 +147,10 @@ section.how-we-do-it {
                 line-height: 22px;
                 color: #ffffff;
                 margin: 0;
-                max-width: 520px; }
+                max-width: 500px; }
+          section.how-we-do-it .container .tabs .tab .text .btn {
+            margin-top: 35px;
+            margin-left: 25px; }
         section.how-we-do-it .container .tabs .tab .image-block {
           width: 25%;
           position: relative;
@@ -276,6 +274,16 @@ section.how-we-do-it {
                   section.how-we-do-it .container .tabs .tab .image-block ol li p {
                     font-size: 13px;
                     line-height: 16px; } }
+        section.how-we-do-it .container .tabs .tab:nth-child(2) .steps li:nth-child(3) .image {
+          max-width: 50px;
+          max-height: 50px;
+          left: -14px;
+          bottom: -17px; }
+        section.how-we-do-it .container .tabs .tab:nth-child(3) .steps li:nth-child(1) .image {
+          max-width: 50px;
+          max-height: 50px;
+          left: -14px;
+          bottom: -17px; }
     section.how-we-do-it .container .lots {
       display: flex;
       flex-direction: column; }

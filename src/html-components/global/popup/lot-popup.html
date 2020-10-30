@@ -1,0 +1,39 @@
+<div class="lot-popup mfp-with-anim send__cont popup" id="lot-popup">
+    <div class="send__item">
+        <div class="circularGCont">
+            <div class="circularG_1 circularG"></div>
+            <div class="circularG_2 circularG"></div>
+            <div class="circularG_3 circularG"></div>
+            <div class="circularG_4 circularG"></div>
+            <div class="circularG_5 circularG"></div>
+            <div class="circularG_6 circularG"></div>
+            <div class="circularG_7 circularG"></div>
+            <div class="circularG_8 circularG"></div>
+        </div>
+    </div>
+    <a href="#" class="popup-close close"></a>
+    <div class="caption"> Оставьте заявку на бесплатный <br> расчет стоимости доставки лота</div>
+    <form action="mail.php" method="post" class="form-lot"><input type="hidden" name="project_name" value="AG США">
+        <input type="hidden" name="formid" value="1"> <input type="hidden" name="form_subject" value="Лот выбран">
+        <div class="form-items">
+            <div class="input"><span>Введите номер лота:</span> <input type="number" name="Номер_лота"
+                                                                       placeholder="12345678" class="lot-input">
+            </div>
+            <div class="radio"><span>Выберите аукцион:</span>
+                <div class="au" style="display: flex; align-items: center;"><label class="answer-text auk"> Copart
+                    <input type="radio" name="Аукцион" class="answer" value="Copart"/> </label> <label
+                        class="answer-text auk"> IAAI <input type="radio" name="Аукцион" class="answer"
+                                                             value="IAAI"/> </label></div>
+            </div>
+        </div>
+        <div class="form-items">
+            <div class="input"><span>Введите ваш номер телефона</span> <input class="tel" type="tel"
+                                                                              placeholder="+380 ( ___ ) __ - __ - __"
+                                                                              name="tel"></div>
+            <div class="button">
+                <button type="submit"><span>получить расчет стоимости </span></button>
+            </div>
+        </div>
+    </form>
+    <div class="image"><img src="img/lot-img.png" alt=""></div>
+</div>
